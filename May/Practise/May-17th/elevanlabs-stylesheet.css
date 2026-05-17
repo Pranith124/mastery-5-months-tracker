@@ -1,0 +1,98 @@
+.home-page{
+    padding: 0;
+    margin:0;
+    font-family:'Roboto Mono', monospace; ;
+}
+* {
+    box-sizing: border-box;
+}
+.home-page-container{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+
+}
+
+.info{
+    flex: 1;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: black;
+    color: white;
+    padding-top: 5%;
+    padding-left: 5%;
+    min-height: 100vh;
+}
+
+.contact-form{
+    flex: 1;
+    width: 100%;
+    display: flex;
+    padding-top: 10%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: black;
+    background-color: white;
+    height: 100vh;
+}
+
+.main-heading{
+    font-size: 22px;
+}
+
+.second-heading{
+    font-size:32px;
+}
+
+.sub-points{
+    font-size: 16px;
+    padding: 10px;
+}
+
+.points{
+    padding-bottom: 5px;
+}
+
+
+.marketing{
+    padding-top: 10px;
+    font-weight: 400;
+    color: grey;
+}
+
+
+.Form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.form-element{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.form-input{
+    border-radius: 7px;
+    border-color: grey;
+    padding: 4px;
+}
+
+.btn{
+    margin: 10px;
+    padding: 5px;
+}
+
+.section-passer{
+    display: flex;
+}
+
+th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
