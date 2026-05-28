@@ -1,0 +1,127 @@
+# Schema
+
+## 1.User
+
+name(firstname , lastname)
+
+id
+
+email
+
+password
+
+age
+
+DOB
+
+profile icon
+
+gender
+
+## 2.Channel
+
+ID
+
+ownerid
+
+channel/name
+
+channel icon
+
+description
+
+subcriptionsCount
+
+Videos count
+
+## 3.Uploads
+
+description
+
+Title
+
+uploaded video
+
+image(thumnail)
+
+type:[”unlisted”,”private”,”public”]
+
+likesCount
+
+comment
+
+channel id
+
+userID
+
+views
+
+deleted: True
+
+## 4.Likes
+
+id
+
+userID
+
+uploadID
+
+## 5.Subscription
+
+id
+
+channelID
+
+userID
+
+## 6.Watch History
+
+id
+
+uploadID
+
+userID
+
+watchedAt(Date)
+
+7.Comments
+
+id
+
+uploadID
+
+userID
+
+descriptions
+
+commentID
+
+createdID
+
+Frontend Pages
+
+1.signin Page
+
+2.signup page
+
+3.Feed Page
+
+4.Search page.
+
+5.Channel Page
+
+6.Video Page
+
+7.History
+
+8.searched List Page
+
+9.Account page
+
+10.subscriptions page
+
+11.Liked videos page
+
+12.Downloads page
+
+13.playlist page.

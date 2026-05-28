@@ -1,0 +1,24 @@
+# You tube
+
+Functional requirements
+
+1. Sign Up
+2. every user has there own channel.
+3. they can able to upload videos.
+4. uploading through - Url, by directly uploading a video.
+5. sharing the video by a link.
+6. search function
+7. Likes,comments, dislikes, share, subscribe button.
+8. Recommendations:
+    1. every user has there own feed.
+9. watch history.
+10. liked videos list.
+11. youtube shorts.
+12. show subtitles of the video.
+13. video perview.
+14. playback speed.
+15. video transcoding , abr
+
+Project designing steps:
+    
+    1.First prepare the database schema.
