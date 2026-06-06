@@ -1,0 +1,69 @@
+## Item
+
+id
+
+name
+
+price
+
+category_id
+
+expiry date
+
+mfc date
+
+quantity
+
+## Category
+
+id
+
+name
+
+## Transaction
+
+id
+
+payment type
+
+transactionid
+
+transaction-time
+
+Total-price
+
+## Transaction-Item
+
+id
+
+transaction_id
+
+item_id
+
+quantity
+
+unit_price
+
+sub_total
+
+## Slot
+
+id
+
+machine_id
+
+slot_number
+
+quantity
+
+item_id
+
+quantity
+
+## Vending Machine
+
+id
+
+location
+
+status

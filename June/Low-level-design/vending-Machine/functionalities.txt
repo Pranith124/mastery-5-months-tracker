@@ -1,0 +1,10 @@
+1. The owner able to is able to lock and unlock the system.
+2. The owner able to able to create package slots,manage prices,manage items
+3. The owner able to add and remove the items in the vending machine.
+4. The owner able to see and collect the money to his bank account.
+5. The owner able to see the history of transactions.   
+6. The owner can able to see the expired items.
+7. The customer can select the item they want.
+8. The customer can add the items to their cart and see the total price .
+9. The customer can complete the transaction, and get the pay slip.
+10. The customer can ask for help in the chatbot by raising a ticket.
