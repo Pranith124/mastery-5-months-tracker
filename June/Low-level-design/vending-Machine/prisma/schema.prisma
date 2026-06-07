@@ -16,5 +16,74 @@ datasource db {
 
 model Category{
   id String @id @default(auto()) @db.ObjectId @map("_id")
+  name String 
+  item Item[]
+}
+
+model Item{
+  id String @id @default(auto()) @db.ObjectId @map("_id")
   name String
+  price Int @default(0)
+  isSoldout Boolean @default(false)
+  category_id String @db.ObjectId
+  category Category ? @relation(fields: [category_id],references: [id])
+  expiry_date DateTime
+  Mfc_date DateTime
+  Transaction_Item Transaction_Item[]
+  Slot Slot[]
+  @@unique([id, price])
+}
+
+
+model Transaction{
+  id String @id @default(auto()) @db.ObjectId @map("_id")
+  payment_type Type
+  transaction_time DateTime @default(now())
+  total_price Int 
+  transaction_items Transaction_Item[]
+}
+
+enum Type{
+  Cash
+  Credit_card
+  UPI
+  @@map("payment-type")
+}
+
+
+model Transaction_Item{
+  id String @id @default(auto()) @db.ObjectId  @map("_id")
+  transaction_id String @db.ObjectId
+  Transaction Transaction @relation(fields: [transaction_id], references: [id])
+  item_id String @db.ObjectId
+  Item Item @relation(fields: [item_id ],references: [id])
+  quantity Int @default(1)
+  unit_price Int 
+  sub_total Int 
+  
+}
+
+model Vending_Machine{
+  id String @id @default(auto()) @db.ObjectId @map("_id")
+  location String
+  Status Status @default(InActive)
+  Slots Slot[]
+}
+
+enum Status{
+  Active
+  Maintance
+  InActive
+}
+
+
+model Slot{
+  id String @id @default(auto()) @db.ObjectId @map("_id")
+  machine_id String @db.ObjectId
+  Machine Vending_Machine @relation(fields: [machine_id], references: [id])
+  Slot_number String 
+  stock Int @default(0)
+  item_id String @db.ObjectId
+  Item Item @relation(fields: [item_id],references: [id])
+  @@unique([machine_id,Slot_number])
 }
