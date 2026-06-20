@@ -65,6 +65,7 @@ model Transaction_Item{
 
 model Vending_Machine{
   id String @id @default(auto()) @db.ObjectId @map("_id")
+  name String
   location String
   Status Status @default(InActive)
   Slots Slot[]
